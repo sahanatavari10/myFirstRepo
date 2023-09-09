@@ -28,6 +28,7 @@ int pop(stk *s)
         printf("Stack underflow");
         return -1;
     }
+    printf("\n%d popped element", s->mystack[s->top]);
     return s->mystack[s->top--];
 }
 
@@ -41,7 +42,7 @@ void display(stk s)
     printf("\n");
     for (int i = 0; i <= s.top; i++)
     {
-        printf(" %d", s.mystack[i]);
+        printf("%d  ", s.mystack[i]);
     }
 }
 
